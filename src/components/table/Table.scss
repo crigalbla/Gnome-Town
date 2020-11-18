@@ -1,0 +1,59 @@
+/** STRUCTURE
+  * .componentName-HTMLlabel-identifier {
+  *
+  * }
+  */
+
+.table-div-main {
+  table {
+    thead th {
+      vertical-align: middle;
+      border: none;
+      text-align: center;
+      padding: 10px 20px 10px 20px;
+    }
+
+    tbody {
+      background-color: white;
+      color: black;
+    }
+
+    tr {
+      background: #FFFFDF;
+
+      th:first-child,
+      td:first-child {
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+      }
+      th:last-child,
+      td:last-child {
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+      }
+    }
+
+    th {
+      position: sticky;
+      top: 0px;
+      background-color: #F5CB92;
+      color: black;
+    }
+
+    th,
+    td {
+      padding: 8px 8px;
+      img {
+        &:hover {
+          cursor: pointer;
+        }
+        max-height: 200px;
+      }
+    }
+  }
+
+  .table-div-hair {
+    height: 1rem;
+    width: 100%;
+  }
+}

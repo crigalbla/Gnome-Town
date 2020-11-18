@@ -1,11 +1,15 @@
-const fetchService = (url, town) => {
+// TODO async
+const fetchService = async (url, town) => {
   if (!url) return null;
-  fetch(url)
+
+  let result = [];
+  await fetch(url)
     .then((response) => response.json())
     .then((data) => {
       const array = data[town];
+      result = array;
     });
-  return '';
+  return result;
 };
 
 export { fetchService };

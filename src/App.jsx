@@ -1,19 +1,17 @@
+// libraies
 import React from 'react';
-import { Button } from 'react-bootstrap';
 
-fetch('https://raw.githubusercontent.com/rrafols/mobile_test/master/data.json')
-  .then((response) => response.json())
-  .then((data) => console.log(data));
+// components
+import { Header, Searcher, Table } from './components';
 
 function App() {
   return (
-    <div className="d-flex justify-content-center py-2">
-      <header>
-        <p>
-          Hello Brastlewark town.
-        </p>
-        <Button>example</Button>
-      </header>
+    <div className="d-flex align-items-center flex-column">
+      <Header />
+      <div className="d-flex align-items-center flex-column py-2">
+        <Searcher />
+        <Table />
+      </div>
     </div>
   );
 }
