@@ -1,5 +1,5 @@
 # Gnome-Town
-Apllication created with React about information of a Gnome town
+Aplication created with React about information of a Gnome town
 
 # Getting Started with Create React App
 
