@@ -4,5 +4,29 @@
   * }
   */
 
-.example-div-main {
+.searcher-div-main {
+  width: 100%;
+
+  .searcher-div-title {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .searcher-div-imputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .searcher-div-maxmin {
+      input {
+        margin-top: 5px;
+        width: 90% !important;
+      }
+    }
+
+    input {
+      margin: 0px 10px 0px 10px;
+      width: 15%;
+    }
+  }
 }

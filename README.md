@@ -42,32 +42,27 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Project Clarifications
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### General information
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The project only has a single view with a table and some inputs as a search engine.
+It has been used React 17, Redux 4, Hooks and Functionals components.
 
-### Code Splitting
+### Table
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The table loads all data and just show the first 50 values to improve performance when we are searching. When we scroll to the end, automatically the table loads 50 more values.
+Also, you can see the friends just clicking on one of them (the name will appear in name searcher).
 
-### Analyzing the Bundle Size
+### Filter / Searcher
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Filters are applied to ALL DATA.
+The Searcher is divided in some inputs which filter the values in table. We have filter to name, age, height, weight and hair color. Filters with number have a maximum value and minimun value, both are inclusive (<= or >=).
 
-### Making a Progressive Web App
+### Test
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This project have not tests.
 
-### Advanced Configuration
+## DATA
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I case the server that provides the data crashes, these can be rescued in the root of the project as the data.txt file
